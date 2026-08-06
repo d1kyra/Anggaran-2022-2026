@@ -26,7 +26,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -41,13 +42,16 @@ html, body {
     width: 8px;
     height: 8px;
 }
+
 ::-webkit-scrollbar-track {
     background: #eef3ef;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #a5d6a7;
     border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #2e7d32;
 }
@@ -106,8 +110,13 @@ body.portal-body {
 }
 
 @keyframes floatShape {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(30px, 40px) scale(1.08); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(30px, 40px) scale(1.08);
+    }
 }
 
 /* Pattern Overlay */
@@ -130,7 +139,7 @@ body.portal-body {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 28px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35),
-                0 0 40px rgba(46, 125, 50, 0.2);
+        0 0 40px rgba(46, 125, 50, 0.2);
     max-width: 480px;
     width: 100%;
     padding: 40px 36px;
@@ -144,6 +153,7 @@ body.portal-body {
         opacity: 0;
         transform: translateY(24px) scale(0.96);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -356,38 +366,47 @@ body.portal-body {
     body.portal-body {
         padding: 16px 12px;
     }
+
     .portal-card {
         padding: 28px 20px;
         border-radius: 22px;
     }
+
     .brand-badge {
         margin-bottom: 16px;
         font-size: 0.75rem;
         padding: 5px 12px;
     }
+
     .icon-hero-wrapper {
         width: 76px;
         height: 76px;
         margin-bottom: 16px;
     }
+
     .icon-hero-inner {
         font-size: 34px;
     }
+
     .portal-card .subtitle {
         margin-bottom: 20px;
     }
+
     .feature-grid {
         gap: 8px;
         margin-bottom: 20px;
     }
+
     .feature-pill {
         padding: 9px 8px;
         border-radius: 12px;
     }
+
     .info-access-box {
         margin-bottom: 20px;
         padding: 10px 12px;
     }
+
     .btn-enter {
         padding: 14px 18px;
         border-radius: 14px;
@@ -651,21 +670,24 @@ body.dashboard-body {
     position: sticky;
     left: 0;
     z-index: 4;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.06);
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.06);
 }
 
 @media (max-width: 575.98px) {
     .toggle-container {
         width: 100%;
     }
+
     .header-banner {
         flex-direction: column;
         align-items: stretch !important;
     }
+
     .filter-container-mobile {
         flex-wrap: wrap;
         gap: 8px;
     }
+
     .modal-body {
         padding: 12px !important;
     }
